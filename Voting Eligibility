@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int age,temp=0 ;
+
+    while(1)
+    {
+
+ cout<<"Enter Your Age Here"<<endl;
+    cin>>age;
+
+ if( age >= 18 && age<100 )
+  {
+     cout<<"Congratulation !!! You Are Eligible For Voting"<<endl;
+    }
+    else if( age >= 100 )
+  {
+cout<<"You Are Eligible But We Suggest Take a Rest"<<endl;
+    }
+    else if(age<18)
+    {
+  temp = 18 - age;
+     cout<<"You Not Are Eligible or You are Not Matured"<<endl;
+     cout<<"Wait  " <<temp<<"   Years For Vote "<<endl;
+    }
+  }
+   return 0;
+}
